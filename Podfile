@@ -6,6 +6,7 @@ target 'testFramworkXY' do
   use_frameworks!
  pod 'RxSwift'
  pod 'RxCocoa'
+ pod 'PromiseKit', '~> 6.11'
   # Pods for testFramworkXY
 
   target 'testFramworkXYTests' do

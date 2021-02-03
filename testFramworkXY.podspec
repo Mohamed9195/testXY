@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "testFramworkXY"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "A short description of testFramworkXY."
   spec.description  = "using push protocol to get any update in permissions when calling framework object one time, and can use Push RXPermission View to show all permission."
   spec.homepage     = "https://github.com/Mohamed9195/testXY"
@@ -24,5 +24,6 @@ end
   spec.swift_version = "4.2"
   spec.dependency 'RxSwift'
   spec.dependency 'RxCocoa'
+  spec.dependency 'PromiseKit', '~> 6.11'
   
 end
