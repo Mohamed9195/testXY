@@ -114,11 +114,11 @@ open class RXLocation: LocationServices  {
         location = LocationServicesClass(LocationDelegate: LocationDelegation())
     }
 
-    func start() -> Observable<LocationStruct> {
+    public func start() -> Observable<LocationStruct> {
         location.start()
     }
 
-    func stop() {
+    public func stop() {
         location.stop()
     }
 }
