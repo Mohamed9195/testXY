@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "testFramworkXY"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "A short description of testFramworkXY."
   spec.description  = "using push protocol to get any update in permissions when calling framework object one time, and can use Push RXPermission View to show all permission."
   spec.homepage     = "https://github.com/Mohamed9195/testXY"
@@ -14,6 +14,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = 'testFramworkXY'
   spec.source_files =  'testFramworkXY/**/*.swift'
   spec.exclude_files = "Classes/Exclude"
+  spec.resources = 'Resources/Info.plist'
 
 spec.subspec 'App' do |app|
 app.source_files = 'testFramworkXY/**/*.swift'
