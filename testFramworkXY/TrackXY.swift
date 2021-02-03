@@ -90,7 +90,7 @@ class LocationDelegation: NSObject, LocationDelegate  {
 }
 
 
-open class RXLocation {
+open class RXLocation: LocationServices  {
 
     private let location: LocationServices
 
@@ -113,20 +113,12 @@ open class RXLocation {
     internal init() {
         location = LocationServicesClass(LocationDelegate: LocationDelegation())
     }
-}
 
-extension RXLocation: LocationServices {
     func start() -> Observable<LocationStruct> {
         location.start()
     }
 
     func stop() {
         location.stop()
-    }
-}
-
-class test {
-    func test()  {
-        RXLocation.default.start()
     }
 }
